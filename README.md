@@ -28,10 +28,10 @@ make CROSS_COMPILE="../linux-dev/dl/gcc-arm-(ver)-x86_64-arm-none-linux-gnueabih
 ```
  7. Leave the `u-boot` folder with `cd ..` and format SD card with a program you are familair with (such as gparted).
  
-|  |Partition 1  | Partition 2 |
+|  | Type | Size |
 |--|--|--|
-| Type | FAT16 | Ext4 |
-|Size  | 100 MB| Remaining Space|
+| **Partition 1** | FAT16 | 100 MB |
+| **Partition 2** | Ext4 | Remaining Space|
 
  8. Create a `boot.cmd` in the `pcduino3` folder with the following lines:
 ```
@@ -104,7 +104,7 @@ sudo umount /media/rootfs/
 # Optional
 ## Install PiHole
 
-1. After hooking up and ssh-ing into your pcduino3b, perform a `sudo apt-get update` and `sudo apt-get` upgrade.
+1. After hooking up and ssh-ing into your pcduino3b, perform a `sudo apt-get update` and `sudo apt-get upgrade`.
 2. After a `sudo reboot`,`sudo su` into root and perform the **One Step Automated Install:** `curl -sSL https://install.pi-hole.net | bash`
 3. Follow the steps to install PiHole!
 4. Enjoy!
