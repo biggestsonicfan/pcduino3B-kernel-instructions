@@ -18,7 +18,7 @@ make_menuconfig () {
 }
 ```
 ###### (This allows proper pcduino3b config settings to be applied to the kernel)
- 4. `cd linux-dev` and run `./build_kernel.sh`  *(You may need to install lopz)*
+ 4. `cd linux-dev` and run `./build_kernel.sh`  *(You may need to install lzop)*
  5. `cd ..` and clone the u-boot repo `git clone https://github.com/u-boot/u-boot.git` then enter the uboot directory `cd u-boot`.
  6. Cross compile u-boot *(you may need to install python38-devel, swig; change `(ver)` to whatever cross-compiler version was downloaded)*:
 ```
